@@ -1,0 +1,25 @@
+{
+  "name": "color-palette-utils",
+  "version": "1.0.0",
+  "description": "functions for working with collections of colors",
+  "main": "index.js",
+  "repository": "https://github.com/zeke/color-palette-utils",
+  "author": "Zeke Sikelianos <zeke@sikelianos.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2",
+    "nice-color-palettes": "^2.0.0",
+    "standard": "^10.0.2",
+    "standard-markdown": "^4.0.1"
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.4"
+  },
+  "scripts": {
+    "test": "mocha && standard --fix && standard-markdown"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
