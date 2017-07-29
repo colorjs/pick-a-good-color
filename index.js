@@ -11,6 +11,12 @@ function makeLegible (color) {
   }
 }
 
+function getMostSaturatedColor (palette) {
+  return palette
+    .map(color => chroma(color))
+    .sort((a, b) => b.get('hsl.s') - a.get('hsl.s'))[0]
+}
+
 function getBoldest (palette, fallback) {
   // sort colors by saturation
   const colors = palette
@@ -32,5 +38,6 @@ function getBoldest (palette, fallback) {
 
 module.exports = {
   getBoldest: getBoldest,
+  getMostSaturatedColor: getMostSaturatedColor,
   makeLegible: makeLegible
 }

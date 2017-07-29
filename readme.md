@@ -16,6 +16,10 @@ const utils = require('color-palette-utils')
 
 ## API
 
+### `utils.getGradient(colors)`
+
+...
+
 ### `utils.getBoldest(colors[, fallback])`
 
 Takes an array of colors and returns the color with the highest saturation that also meets the minimum 

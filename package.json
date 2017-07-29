@@ -8,16 +8,20 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.0",
+    "handlebars": "^4.0.10",
     "mocha": "^3.4.2",
     "nice-color-palettes": "^2.0.0",
+    "pretty": "^2.0.0",
     "standard": "^10.0.2",
     "standard-markdown": "^4.0.1"
   },
   "dependencies": {
-    "chroma-js": "^1.3.4"
+    "chroma-js": "^1.3.4",
+    "color-ops": "^2.0.0"
   },
   "scripts": {
-    "test": "mocha && standard --fix && standard-markdown"
+    "test": "mocha && standard --fix && standard-markdown",
+    "build": "node script/make-demo > demo/index.html"
   },
   "engines": {
     "node": ">=6"
