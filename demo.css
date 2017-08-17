@@ -1,0 +1,63 @@
+:root {
+  --box-size: 150px;
+}
+
+body {
+  font-family: "helvetica neue", helvetica, arial;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+ul.palettes {
+  width: calc(9 * var(--box-size));
+  margin: 0 auto;
+  /* background: green; */
+  text-align: center;
+}
+
+ul.palettes > li {
+  display: inline-block;
+  margin: 100px 0;
+  height: var(--box-size);
+}
+
+ul.swatches {
+  float: none;
+  clear: both;
+  overflow: hidden;
+}
+
+ul.swatches > li {
+  width: var(--box-size);
+  height: var(--box-size);
+  line-height: var(--box-size);
+  float: left;
+  text-align: center;
+  color: white;
+  border-radius: 100%;
+} 
+
+ul.swatches > li.picked {
+  margin-left: var(--box-size);
+}
+
+
+/* li > div {
+  float: left;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  color: white;
+} */

@@ -58,3 +58,11 @@ npm test
 MIT
 
 [chroma-js]: https://github.com/gka/chroma.js
+
+
+
+Note 3: For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect to the specified background over which the text is rendered in normal usage. If no background color is specified, then white is assumed.
+
+
+pick-the-best-color
+

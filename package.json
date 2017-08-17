@@ -1,27 +1,31 @@
 {
-  "name": "color-palette-utils",
+  "name": "pick-a-good-color",
   "version": "1.0.0",
   "description": "functions for working with collections of colors",
   "main": "index.js",
-  "repository": "https://github.com/zeke/color-palette-utils",
+  "repository": "https://github.com/zeke/pick-a-good-color",
   "author": "Zeke Sikelianos <zeke@sikelianos.com>",
   "license": "MIT",
   "devDependencies": {
+    "budo": "^10.0.4",
     "chai": "^4.1.0",
     "handlebars": "^4.0.10",
     "mocha": "^3.4.2",
     "nice-color-palettes": "^2.0.0",
-    "pretty": "^2.0.0",
+    "random-hex-color": "^1.0.1",
     "standard": "^10.0.2",
-    "standard-markdown": "^4.0.1"
+    "standard-markdown": "^4.0.1",
+    "yo-yo": "^1.4.1"
   },
   "dependencies": {
-    "chroma-js": "^1.3.4",
-    "color-ops": "^2.0.0"
+    "color2": "^1.0.8",
+    "lodash": "^4.17.4",
+    "make-color-accessible": "^1.0.0"
   },
   "scripts": {
     "test": "mocha && standard --fix && standard-markdown",
-    "build": "node script/make-demo > demo/index.html"
+    "build": "node script/build > demo/index.html && open demo/index.html",
+    "demo": "budo demo.js --live --no-debug --open --css demo.css"
   },
   "engines": {
     "node": ">=6"
