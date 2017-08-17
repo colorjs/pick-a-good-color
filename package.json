@@ -9,6 +9,7 @@
   "devDependencies": {
     "budo": "^10.0.4",
     "chai": "^4.1.0",
+    "electron-apps": "^1.1667.0",
     "handlebars": "^4.0.10",
     "mocha": "^3.4.2",
     "nice-color-palettes": "^2.0.0",
@@ -20,7 +21,7 @@
   "dependencies": {
     "color2": "^1.0.8",
     "lodash": "^4.17.4",
-    "make-color-accessible": "^1.0.0"
+    "make-color-accessible": "^1.0.1"
   },
   "scripts": {
     "test": "mocha && standard --fix && standard-markdown",

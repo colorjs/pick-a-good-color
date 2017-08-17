@@ -1,5 +1,6 @@
 :root {
-  --box-size: 150px;
+  --box-size: 128px;
+  --column-count: 11;
 }
 
 body {
@@ -7,6 +8,8 @@ body {
   font-weight: bold;
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  color: white;
 }
 
 ul {
@@ -20,10 +23,16 @@ li {
 }
 
 ul.palettes {
-  width: calc(9 * var(--box-size));
+  width: calc(var(--column-count) * var(--box-size));
   margin: 0 auto;
-  /* background: green; */
   text-align: center;
+}
+
+ul.palettes.heading > li {
+  color: #000 !important;
+  opacity: 0.5;
+  margin: 0;
+  height: 30px;
 }
 
 ul.palettes > li {
@@ -44,14 +53,17 @@ ul.swatches > li {
   line-height: var(--box-size);
   float: left;
   text-align: center;
-  color: white;
-  border-radius: 100%;
+  /* border-radius: 100%; */
 } 
 
-ul.swatches > li.picked {
-  margin-left: var(--box-size);
+ul.swatches > li img {
+  width: 100%;
+  height: 100%;
 }
 
+ul.swatches > li.picked, ul.swatches > li.icon {
+  margin-left: var(--box-size);
+}
 
 /* li > div {
   float: left;
