@@ -1,6 +1,5 @@
 const yo = require('yo-yo')
 const path = require('path')
-const randomColor = require('random-hex-color')
 const pick = require('.')
 
 const results = require('electron-apps')

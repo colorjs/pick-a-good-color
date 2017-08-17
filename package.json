@@ -1,7 +1,7 @@
 {
   "name": "pick-a-good-color",
   "version": "1.0.0",
-  "description": "functions for working with collections of colors",
+  "description": "Choose the boldest and most accessible color for a given background.",
   "main": "index.js",
   "repository": "https://github.com/zeke/pick-a-good-color",
   "author": "Zeke Sikelianos <zeke@sikelianos.com>",
@@ -10,10 +10,7 @@
     "budo": "^10.0.4",
     "chai": "^4.1.0",
     "electron-apps": "^1.1667.0",
-    "handlebars": "^4.0.10",
     "mocha": "^3.4.2",
-    "nice-color-palettes": "^2.0.0",
-    "random-hex-color": "^1.0.1",
     "standard": "^10.0.2",
     "standard-markdown": "^4.0.1",
     "yo-yo": "^1.4.1"
@@ -25,7 +22,6 @@
   },
   "scripts": {
     "test": "mocha && standard --fix && standard-markdown",
-    "build": "node script/build > demo/index.html && open demo/index.html",
     "demo": "budo demo.js --live --no-debug --open --css demo.css"
   },
   "engines": {
