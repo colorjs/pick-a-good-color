@@ -1,37 +1,15 @@
-# color-palette-utils 
+# pick-a-good-color 
 
-functions for working with collections of colors
+Choose the boldest and most accessible color for a given background.
+
+[![electron app icon colors](https://user-images.githubusercontent.com/2289/29397734-370d9d00-82d5-11e7-8689-d32e40256d67.png)](https://user-images.githubusercontent.com/2289/29397854-e127ed86-82d5-11e7-9837-e3016c03ce8e.png)
 
 ## Installation
 
 ```sh
-npm install color-palette-utils --save
+npm install pick-a-good-color --save
 ```
 
-## Usage
-
-```js
-const utils = require('color-palette-utils')
-```
-
-## API
-
-### `utils.getGradient(colors)`
-
-...
-
-### `utils.getBoldest(colors[, fallback])`
-
-Takes an array of colors and returns the color with the highest saturation that also meets the minimum 
-contrast requirement of **4.5:1**, as specified by the [W3C Web Content Accessibility Guidelines](https://www.w3.org/TR/WCAG20-TECHS/G18.html). 
-If none of the provided colors meet this criteria, the `fallback` color is used. If no `fallback` is specified, 
-then the most saturated color is selected and darkened to meet the minimum contrast requirement.
-
-- `colors` Array - can be hex strings like `#FF0000` or any other input supported by [chroma-js].
-- `fallback` String - hex color to use if none of the given colors have enough contrast. If
-   unspecified, the fallback color is generated automatically.
-
-Returns a [chroma-js] instance.
 
 ## Tests
 
@@ -42,27 +20,21 @@ npm test
 
 ## Dependencies
 
-- [chroma-js](https://github.com/gka/chroma.js): JavaScript library for color conversions
+- [color2](https://github.com/dfcreative/color): Stateful implementation of color
+- [lodash](https://github.com/lodash/lodash): Lodash modular utilities.
+- [make-color-accessible](https://github.com/zeke/make-color-accessible): produce colors that meet web content accessibility guidelines
 
 ## Dev Dependencies
 
+- [budo](https://github.com/mattdesl/budo): a browserify server for rapid prototyping
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
+- [electron-apps](https://github.com/electron/electron-apps): A collection of apps built on Electron
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
-- [nice-color-palettes](https://github.com/Jam3/nice-color-palettes): nice colour palettes as JSON
 - [standard](https://github.com/feross/standard): JavaScript Standard Style
-- [standard-markdown](): Test your Markdown files for Standard JavaScript Style™
+- [standard-markdown](https://github.com/zeke/standard-markdown): Test your Markdown files for Standard JavaScript Style™
+- [yo-yo](https://github.com/maxogden/yo-yo): A tiny library for building modular UI components using DOM diffing and ES6 tagged template literals
 
 
 ## License
 
 MIT
-
-[chroma-js]: https://github.com/gka/chroma.js
-
-
-
-Note 3: For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect to the specified background over which the text is rendered in normal usage. If no background color is specified, then white is assumed.
-
-
-pick-the-best-color
-

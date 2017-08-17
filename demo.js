@@ -3,7 +3,7 @@ const path = require('path')
 const pick = require('.')
 
 const results = require('electron-apps')
-  // .slice(0,150)
+  .slice(26)
   .map(app => {
     console.clear()
     console.log(app)
@@ -46,10 +46,10 @@ function key () {
         <li></li>
         <li></li>
         <li></li>
-
         <li>On Black</li>
         <li></li>
         <li>On White</li>
+        <li></li>
         <li>Icon</li>
       </ul>
     </li>

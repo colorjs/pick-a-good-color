@@ -37,7 +37,7 @@ ul.palettes.heading > li {
 
 ul.palettes > li {
   display: inline-block;
-  margin: 100px 0;
+  margin: 80px 0;
   height: var(--box-size);
 }
 
