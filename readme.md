@@ -10,6 +10,42 @@ Choose the boldest and most accessible color for a given background.
 npm install pick-a-good-color --save
 ```
 
+## Usage
+
+By default, this module will pick a color that will work on a white background:
+
+```js
+const pick = require('pick-a-good-color')
+const colors = ['#DB1AC2', '#C70C4D', '#6B0964', '#5D2BD6', '#088C00']
+const goodColor = pick(colors)
+// => #C70C4D
+``` 
+
+If you need a color that will work on a black background, set the 
+`background` option:
+
+```js
+const goodColor = pick(colors, {background: 'black'})
+```
+
+For large text, the W3C's Web Content Accessibility Group 
+[recommends](https://www.w3.org/TR/WCAG/#visual-audio-contrast)
+a lower minimum ratio of 3:1.
+
+To change the minimum required contrast, set the `contrast` option:
+
+```js
+const goodColor = pick(colors, {contrast: 3})
+```
+
+## API
+
+### `pickAGoodColor(color[, options])`
+
+- `color` - A hex string, html color name like `black` or `white`, or any other input accepted by the [color2](https://github.com/scrapjs/color#api) module. (required)
+- `options` - An object. Optional.
+  - `contrast` - A number representing the minimum required contrast ratio between `color` and `options.background`. Defaults to the [WCAG recommendation](https://www.w3.org/TR/WCAG20-TECHS/G18.html) of `4.5`. Can be any number between 1 and 21.
+  - `background` - A hex string, html color name like `black` or `white`, or any other input accepted by the [color2](https://github.com/scrapjs/color#api) module. Defaults to `white`.
 
 ## Tests
 
@@ -17,6 +53,10 @@ npm install pick-a-good-color --save
 npm install
 npm test
 ```
+
+## See Also
+
+- [leaverou.github.io/contrast-ratio](http://leaverou.github.io/contrast-ratio/) - A tool to calculate the contrast ratio between any two valid CSS colors. 
 
 ## Dependencies
 
