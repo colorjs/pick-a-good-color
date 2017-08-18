@@ -1,6 +1,6 @@
 {
   "name": "pick-a-good-color",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Choose the boldest and most accessible color for a given background.",
   "main": "index.js",
   "repository": "https://github.com/zeke/pick-a-good-color",
