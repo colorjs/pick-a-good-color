@@ -68,7 +68,7 @@ npm test
 
 - [color2](https://github.com/dfcreative/color): Stateful implementation of color
 - [lodash](https://github.com/lodash/lodash): Lodash modular utilities.
-- [make-color-accessible](https://github.com/zeke/make-color-accessible): produce colors that meet web content accessibility guidelines
+- [make-color-accessible](https://github.com/colorjs/make-color-accessible): produce colors that meet web content accessibility guidelines
 
 ## Dev Dependencies
 
@@ -77,7 +77,7 @@ npm test
 - [electron-apps](https://github.com/electron/electron-apps): A collection of apps built on Electron
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [standard](https://github.com/feross/standard): JavaScript Standard Style
-- [standard-markdown](https://github.com/zeke/standard-markdown): Test your Markdown files for Standard JavaScript Style™
+- [standard-markdown](https://github.com/colorjs/standard-markdown): Test your Markdown files for Standard JavaScript Style™
 - [yo-yo](https://github.com/maxogden/yo-yo): A tiny library for building modular UI components using DOM diffing and ES6 tagged template literals
 
 
